@@ -1,9 +1,9 @@
 /* General */
 
-
 html {
     scrollbar-gutter: stable;
 }
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -30,7 +30,17 @@ header {
     align-items: center;
     font-size: 1.4rem;
 }
+.logo-group {
+    display: flex;
+    align-items: center; /* Keeps your name perfectly centered vertically next to the larger GIF */
+    gap: 15px;           /* Slightly more space looks better with a larger image */
+}
 
+.header-gif {
+    height: 40px;        /* Increased size—adjust this number until it looks exactly how you want! */
+    width: auto;         /* Keeps the GIF's proportions perfect so it doesn't distort */
+    display: block;
+}
 .site-title {
     /*font-size: 1.4rem;*/
     font-weight: bold;
@@ -116,8 +126,9 @@ ol li a {
 }
 
 .profile-image img {
-    width: 600px;
-    border-radius: 8px;
+    width: 100%;        
+    max-width: 600px;   
+    height: auto;       
     display: block;
 }
 
@@ -151,18 +162,26 @@ ol li a {
     }
 
     .profile {
-        flex-direction: column;
-        gap: 24px;
-    }
+    flex-direction: column !important;
+    align-items: center !important;    
+    width: 100% !important;
+}
 
     .profile-image {
-        flex: none;
-        width: 100%;
-    }
-
-    .profile-image img {
-        width: 100%;
-        max-width: 450px;
-        height: auto;
-    }
+    width: 100% !important;
+    max-width: 100% !important;        
+    display: block !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+    box-sizing: border-box; 
 }
+
+    /* Force the image to elegantly fit smaller mobile widths without leaking over the right edge */
+    .profile-image img {
+        width: 100%;            /* Tells Safari to treat the max-width as the absolute limit */
+        max-width: 400px;       /* Keeps it perfectly framed on small device displays */
+        height: auto;           /* Solves layout skew/stretching distortion */
+        display: block;
+        margin: 0 auto;         /* Centers the image asset directly inside the column track */
+    }
+ 
