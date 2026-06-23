@@ -23,7 +23,7 @@ header {
 .header-content {
     /*max-width: 1000px;*/
     margin: 0 auto;
-    padding: 2% 2%;
+    padding: 0.5% 2%;
 
     display: flex;
     justify-content: space-between;
@@ -37,8 +37,8 @@ header {
 }
 
 .header-gif {
-    height: 40px;        /* Increased size—adjust this number until it looks exactly how you want! */
-    width: auto;         /* Keeps the GIF's proportions perfect so it doesn't distort */
+    height: auto;        /* Increased size—adjust this number until it looks exactly how you want! */
+    width: 10vw;         /* Keeps the GIF's proportions perfect so it doesn't distort */
     display: block;
 }
 .site-title {
