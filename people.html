@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,7 +7,29 @@
     <title>Aaliyah Dookhith Research Group</title>
 
     <link rel="stylesheet" href="style.css">
+
+<style>
+    
+   .headshot {
+        flex: 1;
+        margin-right: auto;
+        text-align: center;
+        margin-left: 20%; 
+        max-width: 280px;
+    }
+
+    /* Removes the 20% left shift and centers the block on mobile screens */
+    @media (max-width: 768px) {
+        .headshot {
+            margin-left: auto;
+        }
+    }
+ 
+</style>
+
 </head>
+
+
 
 <body>
 
@@ -31,14 +54,13 @@
 
 
 <div class="profile">
-
-<div class="profile-image" style="margin-left: auto; margin-right: auto; text-align: center; max-width: 280px;">
-        <h1 style="font-size: 1.5rem; margin-top: 0; margin-bottom: 10px;">Principal Investigator</h1>
-        <img
-            src="Aaliyah-Dookhith.jpg"
-            alt="Aaliyah Dookhith"
-            style="max-width: 280px; width: 100%; height: auto;"
-        >
+    <div class="headshot">
+            <h1 style="font-size: 1.5rem; margin-top: 0; margin-bottom: 10px;">Principal Investigator</h1>
+            <img
+                src="Aaliyah-Dookhith.jpg"
+                alt="Aaliyah Dookhith"
+                style="max-width: 280px; width: 100%; height: auto;"
+            >
     </div>
 
     <div class="profile-text" style="padding-top: 5%;padding-right: 20%;">
